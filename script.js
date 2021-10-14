@@ -32,12 +32,8 @@
 //  || ou
 // Negativo !variável
 
-var idade = 20;
-var menor20 = idade >= 20;
-var maior65 = idade <= 30;
-var gratuidade = menor20 && maior65;
+var numero = parseInt(prompt("Digite um número:"));
 
-console.log ("Idade", idade);
-console.log ("É menor que 20?", menor20);
-console.log ("É maior que 65", maior65);
-console.log ("Recebe gratuidade?", gratuidade);
+var dobro = numero + numero;
+
+alert("O dobro de " + numero + " é igual a: " + dobro)
