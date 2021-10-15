@@ -32,7 +32,7 @@
 //  || ou
 // Negativo !variável
 
-var numero = parseInt(prompt("Digite um número:"));
+/*var numero = parseInt(prompt("Digite um número:"));
 
 var dobro = numero + numero;
 
