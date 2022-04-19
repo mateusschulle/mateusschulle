@@ -1,0 +1,38 @@
+#cursosConcluidos {
+    background-color: #014A8A;
+    padding: 10px;
+}
+
+#cursosConcluidos h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 1em 0;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+}
+.cursos {
+    border-radius: 10px;
+    width: 550px;
+    height: 100px;
+    display: inline-block;
+    padding: 15px;
+    margin: 1em;
+    transition: 200ms all;
+    line-height: 32px;
+    align-content: center;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.cursos:hover {
+    box-shadow: 5px 5px 50px 0px, -5px -5px 50px 0px #004d90;
+    cursor: pointer;
+    top: 1px;
+}
+
+.cursos h2 {
+    font-weight: bold;
+}
+

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 5vh;
     background-color: #DCDCDC;
     font-family: 'Lobster Two', cursive;
     font-size: 30px;
@@ -13,6 +13,7 @@ nav {
     position: sticky;
     top: 0px;
     background-color: #014A8A;
+    height: 7vh;
 }
 
 ul {
@@ -24,7 +25,7 @@ ul {
 
 li {
     font-size: 24px;
-    margin: 25px;
+    margin: 12px;
     color: white;
     font-family: 'Lobster Two', cursive;
     font-family: 'Oswald', sans-serif;
@@ -41,13 +42,3 @@ li:hover {
     color: black;
     cursor: pointer;
 }
-
-.link {
-    text-decoration: none;
-}
-
-.progressBar{
-    height: 50px;
-    padding: 5px;
-    background-color: #ccc;
-  }
