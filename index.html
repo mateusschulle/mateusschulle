@@ -1,136 +1,40 @@
 <!DOCTYPE html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Mateus Schulle</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Velha</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="./game.js"></script>
+        <script src="./interface.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap" rel="stylesheet"> 
-        <link href="./resetCss.css" rel="stylesheet">
-        <link href="./style.css" rel="stylesheet">
-        <link href="./sobreMim.css" rel="stylesheet">
-        <link href="./contato.css" rel="stylesheet">
-        <link href="./projetos.css" rel="stylesheet">
-        <link href="./cursos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1 id="title">Mateus Schulle</h1>
-        </header>
-        <nav>
-            <ul>
-                <a class="link" href="#top"><li>Início</li></a>
-                <li>Projetos</li>
-                <a class="link" href="#cursosConcluidos"><li>Cursos</li></a>
-                <li>Sobre mim</li>
-                <a class="link" href="#contato"><li>Contato</li></a>
-            </ul>
-        </nav>
 
-        <section class="projetos">
-            <div class="aluraPlus">
+        <h1>Jogo da Velha</h1>
 
+        <div class="stage">
+            <div>
+                <div id="1" class="square"></div>
+                <div id="2" class="square"></div>
+                <div id="3" class="square"></div>
             </div>
 
-        </section>
+            <div>
+                <div id="4" class="square"></div>
+                <div id="5" class="square"></div>
+                <div id="6" class="square"></div>
+            </div>
 
-        <section id="cursosConcluidos">
-            <h1>Cursos concluídos</h1>
-            <a href="https://cursos.alura.com.br/certificate/38c88d82-b27e-4eea-91c9-055c5ae7cbb1" target="_blank">
-                <div class="cursos">
-                <h2>HTML5 E CSS3 PARTE 1: A PRIMEIRA PÁGINA DA WEB</h2>
-                <p>Alura</p>
-                <p>Finalizado em 29/12/2021</p>
-                </div>
-            </a>
-
-            <a href="https://cursos.alura.com.br/certificate/51a02c37-c834-4193-ac02-08f13f8e623c" target="_blank">
-                <div class="cursos">
-                    <h2>HTML5 E CSS3 PARTE 2: POSICIONAMENTO, LISTAS E NAVEGAÇÃO</h2>
-                    <p>Alura</p>
-                    <p>Finalizado em 13/01/2022</p>
-                </div>
-            </a>
-
-            <a href="https://cursos.alura.com.br/certificate/bff61d55-e27e-4f8a-aeda-86da739a8c58" target="_blank">
-                <div class="cursos">
-                    <h2>HTML5 E CSS3 PARTE 3: TRABALHANDO COM FORMULÁRIOS E TABELAS</h2>
-                    <p>Alura</p>
-                    <p>Finalizado em 28/03/2022</p>
-                </div>
-            </a>
-
-            <a href="https://cursos.alura.com.br/certificate/b7d48b52-88bf-41be-b1b5-8ffd19a12a48" target="_blank">
-                <div class="cursos">
-                    <h2>HTML5 E CSS3 PARTE 4: AVANÇANDO NO CSS</h2>
-                    <p>Alura</p>
-                    <p>Finalizado em 12/04/2022</p>
-                </div>
-            </a>
-            
-                <div class="cursos">
-                    <h2>JAVASCRIPT: PRIMEIROS PASSOS COM A LINGUAGEM</h2>
-                    <p>Alura</p>
-                    <p>Finalizado em 19/01/2022</p>
-                </div>
-
-                <div class="cursos logicaI">
-                    <h2>LÓGICA DE PROGRAMAÇÃO I</h2>
-                    <p>Alura</p>
-                    <p>Finalizado em 27/03/2022</p>
-                </div>
-
-                <div class="cursos">
-                    <h2>REACT: ENTENDENDO COMO A BIBLIOTECA FUNCIONA</h2>
-                    <p>Alura</p>
-                    <p>Finalizado em 05/07/2021</p>
-                </div>
-
-                <div class="cursos">
-                    <h2>DESENVOLVIMENTO WEB FULL STACK</h2>
-                    <p>ProgramadorBr, Igor Oliveira</p>
-                    <p>Finalizado em 08/01/2022</p>
-                </div>
-
-                <div class="cursos">
-                    <h2>TÉCNICO EM INFORMÁTICA</h2>
-                    <p>Prime Cursos</p>
-                    <p>Finalizado em 03/2021</p>
-                </div>
-
-        </section>
-
-        <!-- <section id="contato">
-            
-            <form class="formulario">
-
-                <label for="nomeCompleto">Nome completo</label>
-                <input class="inputsCaixas" id="nomeCompleto" type="text" placeholder="Seu nome aqui" required>
-
-                <label for="email">Email</label>
-                <input class="inputsCaixas" id="email" type="email" placeholder="seuemail@dominio.com.br" required>
-                
-                <label for="contatoCelular">Celular</label>
-                <input class="inputsCaixas" id="contatoCelular" type="tel" placeholder="(XX) XXXXX-XXXX" required>
-
-                <label for="generoMasculino">Masculino</label>
-                <input id="generoMasculino" type="radio" name="genero" value="masculino" required>
-
-                <label for="generoFeminino">Feminio</label>
-                <input id="generoFeminino" type="radio" name="genero" value="feminino" required>
-
-                <label for="prefiroNaoDizer">Prefiro não dizer</label>
-                <input id="prefiroNaoDizer" type="radio" name="genero" value="prefiro nao dizer" required>
-
-                <button id="enviar">Enviar</button>
-
-            </form>
+            <div>
+                <div id="7" class="square"></div>
+                <div id="8" class="square"></div>
+                <div id="9" class="square"></div>
+            </div>
+        </div>
         
-        </section> -->
-
-
-     
     </body>
 </html>
